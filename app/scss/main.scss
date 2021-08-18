@@ -35,6 +35,11 @@ body {
   &.no-scroll {
     overflow: hidden;
   }
+  &.not-home {
+    .wrapper {
+      height: 100%;
+    }
+  }
 }
 
 .wrapper {
