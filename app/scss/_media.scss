@@ -11,19 +11,52 @@ $main-color: #0054A4;
   }
 }
 //@media screen and (max-width: 1025px) and (min-height: )
+@media screen and (min-width: 1025px) {
+  .full-form {
+    .title {
+      padding-bottom: 0.9vw;
+      margin-bottom: 1.02938vw;
+    }
+    .title span {
+      margin-top: 0.7729vw;
+    }
+    .quiz-form>p {
+      letter-spacing: 0.005em;
+      margin-bottom: 1.05vw;
+    }
+  }
+}
 @media screen and (max-width: 1025px) and (orientation: portrait){
+  .full-form {
+    .quiz-form>p {
+      max-width: 80%;
+    }
+    .title {
+      padding-bottom: 4.2444vw;
+      margin-bottom: 4.0444vw;
+    }
+    .quiz-content {
+      padding-top: 51.2778vw;
+    }
+    .title span {
+      margin-top: 3.58vw;
+    }
+  }
+  .single-social:nth-child(2) {
+    margin-left: 0;
+  }
   .socials {
-    margin-top: 8.8889vw;
-    width: 59.7222vw;
+    margin-top: 7.19889vw;
+    width: 60.7222vw;
     margin-right: 0;
     align-self: center;
     a {
-      width: 13.8889vw;
-      height: 13.8889vw;
+      width: 14.8889vw;
+      height: 14.8889vw;
     }
   }
   .thanks-block {
-    padding-top: 17.2222vw;
+    padding-top: 17.82222vw;
     .title {
       br {
         display: block !important;
@@ -36,6 +69,7 @@ $main-color: #0054A4;
       }
       span {
         margin-top: 0;
+        letter-spacing: -0.008em;
       }
       &::after {
         content: none;
@@ -48,10 +82,12 @@ $main-color: #0054A4;
     line-height: 5.0000vw;
   }
   .rules {
-    margin-top:4.4444vw;
+    margin-top:5.4444vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   .form {
-    row-gap: 4.4444vw;
+    row-gap: 4.0044vw;
   }
   .input {
     button {
@@ -170,7 +206,7 @@ $main-color: #0054A4;
   .single-question {
     background: #003672;
     width: calc(50% - (4.1667vw /2));
-    padding: 6.6667vw 1.9444vw;
+    padding: 6.6667vw 1.9444vw 5.2667vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +223,7 @@ $main-color: #0054A4;
     justify-content: flex-start;
   }
   .title {
-    padding-bottom: 4.4444vw;
+    padding-bottom: 4.9444vw;
     position: relative;
     margin-bottom: 4.4444vw;
     border-bottom: none;
@@ -210,14 +246,14 @@ $main-color: #0054A4;
     }
     h1, h2 {
       font-size: 7.2222vw;
-      line-height: 7.2222vw;
+      line-height: 7.4222vw;
       max-width: 71vw;
     }
     p {
       font-size: 4.4444vw;
       color: white;
       line-height: 5.0000vw;
-      margin-bottom: 1.1111vw;
+      margin-bottom: 1.3111vw;
       font-weight: bold;
     }
   }
@@ -225,7 +261,7 @@ $main-color: #0054A4;
     .title {
       h1, h2 {
         font-size: 9.7222vw;
-        line-height: 9.7222vw;
+        line-height: 9.8222vw;
       }
     }
   }
@@ -255,6 +291,7 @@ $main-color: #0054A4;
 
   }
   .rules {
+
     span {
       margin-right: 0;
       &::before {
@@ -265,7 +302,8 @@ $main-color: #0054A4;
       &::after {
         width: 8.6111vw;
         height: 9.4444vw;
-        right: -3.556vw;
+        //right: -3.556vw;
+        right: 0.044vw;
         top: -3.2778vw;
       }
     }
@@ -273,6 +311,8 @@ $main-color: #0054A4;
       span, a {
         font-size: 4.4444vw;
         line-height: 6.1111vw;
+        padding-right: 3.0556vw;
+        letter-spacing: 0.05em;
       }
 
 
@@ -285,17 +325,19 @@ $main-color: #0054A4;
   }
   .form {
     button {
-      margin-top: 2.2222vw;
+      margin-top: 2.922vw;
       height: 16.6667vw;
+      font-weight: bold;
       font-size: 4.4444vw;
       line-height: 7.7778vw;
+      letter-spacing: 0.05em;
 
       box-shadow: 0 0 2.2222vw rgba(0, 0, 0, 0.2);
       &::after {
         width: 2.2222vw;
         height: 2.2222vw;
-        margin-right: 2.2222vw;
-        margin-left: 1.1111vw;
+        margin-right: 2.9222vw;
+        //margin-left: 1.1111vw;
       }
       &:hover {
         &::after {
@@ -336,7 +378,7 @@ $main-color: #0054A4;
   .footer-link {
     align-items: flex-start;
     > a {
-      margin-top: 8.3333vw;
+      margin-top: 8.0333vw;
       height: 16.6667vw;
       font-size: 4.4444vw;
       line-height: 7.7778vw;
@@ -400,22 +442,23 @@ $main-color: #0054A4;
       line-height: 6.1111vw;
       text-align: right;
       font-weight: 600;
+      letter-spacing: 0.01em;
     }
   }
   .footer-socials {
     padding: 0;
-    margin-top: 7.2222vw;
+    margin-top: 8.5222vw;
     margin-bottom: 12.5000vw;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
   .footer {
-    margin-top: 10.5556vw;
+    margin-top: 14.7556vw;
     > h2 {
       font-size: 33.3333vw;
       line-height: 33.3333vw;
-      margin-bottom: 1.9444vw;
+      margin-bottom: 3.2444vw;
     }
     > span {
       font-size: 4.4444vw;
@@ -424,7 +467,8 @@ $main-color: #0054A4;
     > p {
       font-size: 6.1111vw;
       line-height: 7.5000vw;
-      letter-spacing: -0.01em;
+      letter-spacing: 0.029em;
+      max-width: 66%;
     }
   }
   .prize-photos {
@@ -437,28 +481,30 @@ $main-color: #0054A4;
   }
   .prizes {
     flex-direction: column;
-    margin-top: 23.8889vw;
+    margin-top: 20.0889vw;
   }
 
   .single-prize {
     width: 100%;
-    margin-bottom: 13.3333vw;
+    margin-bottom: 15.80333vw;
     &:last-child {
       margin-bottom: 0;
     }
     h2 {
       font-size: 6.1111vw;
       line-height: 6.1111vw;
-      margin-bottom: 0;
+      margin-bottom: 0.7vw;
     }
     p {
       font-size: 4.4444vw;
       line-height: 6.1111vw;
-      margin-top: -3.8889vw;
+      margin-top: -2.489vw;
+      letter-spacing: 0.034em;
     }
     span {
       font-size: 4.4444vw;
       line-height: 6.1111vw;
+      letter-spacing: -0.01em;
     }
   }
   @keyframes movingArrow {
@@ -476,7 +522,7 @@ $main-color: #0054A4;
     position: static;
     width: 8.3333vw;
     transform: none;
-    margin: 10.0000vw auto 0;
+    margin: 9.60000vw auto 0;
     img {
       &:nth-child(2) {
         transform: translate(0, -3.0556vw);
@@ -495,10 +541,13 @@ $main-color: #0054A4;
     }
   }
   .sub-text{
-    margin-top: 8.3333vw;
+    margin-top: 7.7333vw;
+    p, span {
+      letter-spacing: 0.001em !important;
+    }
   }
   .home-text {
-    margin-top: 5.5556vw;
+    margin-top: 5.0556vw;
     p {
       font-size: 4.4444vw;
       line-height: 6.1111vw;
@@ -518,6 +567,7 @@ $main-color: #0054A4;
       padding-bottom: 4.4444vw;
       box-sizing: border-box;
       position: relative;
+      letter-spacing: 0;
       width: 100%;
       &::after {
         width: calc(100% + 6.9444vw);
@@ -532,7 +582,8 @@ $main-color: #0054A4;
       }
     }
     p {
-      margin-top: 3.8889vw;
+      margin-top: 3.5889vw;
+      letter-spacing: 0.005em;
       font-size: 6.1111vw;
       line-height: 7.2222vw;
     }

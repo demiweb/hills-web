@@ -39,7 +39,7 @@ function changeActiveLink() {
         linkForm.addEventListener('click', (e) => {
             if (linkForm.classList.contains('non-active')) {
                 e.preventDefault();
-                console.log('non-active');
+                // console.log('non-active');
                 document.querySelector('.rules-notify').classList.remove('visible');
                 clearTimeout(timerNotify);
                 setTimeout(() => {
@@ -96,7 +96,7 @@ function checkCorrectAnswer() {
 
                     }
                     btn.closest('.full-screen').classList.add('answered');
-                    console.log(correctCounter);
+                    // console.log(correctCounter);
                     counterAnswers += 1;
 
                     document.querySelector('.bar-btn--next').classList.remove('disabled');
@@ -128,7 +128,7 @@ function barBtnPress() {
                         fullQuestion[activeFull - 1].classList.add('visible');
                         if (activeFull === 1) {
                             btn.classList.add('disabled');
-                            console.log(activeFull + ' brb22 ' + counterAnswers);
+                            // console.log(activeFull + ' brb22 ' + counterAnswers);
 
                         }
                         if (counterAnswers >= activeFull) {
@@ -153,7 +153,7 @@ function barBtnPress() {
                         fullQuestion[activeFull - 1].classList.add('current');
                         [...document.querySelectorAll('.bar-item')][activeFull - 1].classList.add('current');
                         document.querySelector('.bar-btn--prev').classList.remove('disabled');
-                        console.log(activeFull + ' brb ' + fullLength);
+                        // console.log(activeFull + ' brb ' + fullLength);
                         // if (activeFull === fullLength) {
                         //     btn.classList.add('disabled');
                         // }
